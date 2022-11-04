@@ -46,6 +46,11 @@ persona = {
     },
 }
 
+// Nota bene :  a differenza da javascript dove se accediamo ad un attributo che non esiste dara errore di runtime , 
+// typescript segnalera l'errore da subito nel codice 
+
+// persona.anniviaggio ; // e commentato perche genera un errore 
+
 function getData(data : { id: number ; username : string ; password : string }){
     window.console.log(data);
 }
