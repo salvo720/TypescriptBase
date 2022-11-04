@@ -6,17 +6,19 @@
 //     - 45) boolean 
 
 
-// Typescript 05 array, tuple, object e custom type: (4)
-//     - object
-//     - array
+// Typescript 05 array, tuple, object e custom type: (3)
+//     - 51) object
+//     - 52) array
 //     - tuple
-//     - custom Type
+//     
 
-// Typescript 06 enum, any, union e custom type: (4)
+
+// Typescript 06 enum, any, union e custom type: (5)
 //     - enum
 //     - any
 //     - union
 //     - alias
+//     - custom Type
 
 
 
