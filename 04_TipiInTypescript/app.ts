@@ -9,17 +9,15 @@
 // Typescript 05 array, tuple, object e custom type: (3)
 //     - 51) object
 //     - 52) array
-//     - tuple
+//     - 53) tuple  // da qui in poi sono strutture dati che esistono solo all'interno di typescript 
 //     
 
 
 // Typescript 06 enum, any, union e custom type: (5)
-//     - enum
-//     - any
-//     - union
-//     - alias
-//     - custom Type
-
+//     - 61) any
+//     - 62) union
+//     - 63)  custom Type
+//     - 64) enum
 
 
 //  41) - differenza tra tipi js (dinamico) e ts (statico) :

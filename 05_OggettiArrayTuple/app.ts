@@ -9,16 +9,15 @@
 // Typescript 05 array, tuple, object e custom type: (3)
 //     - 51) object
 //     - 52) array
-//     - tuple
+//     - 53) tuple  // da qui in poi sono strutture dati che esistono solo all'interno di typescript 
 //     
 
 
 // Typescript 06 enum, any, union e custom type: (5)
-//     - enum
-//     - any
-//     - union
-//     - alias
-//     - custom Type
+//     - 61) any
+//     - 62) union
+//     - 63)  custom Type
+//     - 64) enum
 
 
 // 51 ) - object 
@@ -64,4 +63,6 @@ const arr : number[] = [1,2,3];
 const arr2 : any[] = [1,2,3,true , '' ,];
 
 // 53) - Tuple 
-// e un array a lunghezza fissa 
+
+// e un array a lunghezza fissa con valori e tipi ben definiti 
+const tupla : [number , number , string] = [1,2,'']
