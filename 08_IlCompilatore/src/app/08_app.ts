@@ -36,3 +36,9 @@ function app ( x : string ){
 
 // 85) - altre opzioni di configurazione ( js , sourcemap )
 // abilitando la source map possiamo visualizzare la il sorgente typescript e debbuggarlo sul browser dalla sezione source (origini )
+
+// 86) - outDir e rootDir 
+// outDir : la cartella dove verrano messi i file compilati di typescript , generalmente sara la cartella dist 
+// rootDir : e un opzione dove ci consente di specificare la cartella radice , ma essa deve contenere tutti i file typescript , 
+// o quando viene eseguito il compilatore con il comando tsc  andra in errore , generalmente sara la carte src che significa source 
+// Nota Bene : le cartelle vanno specificate nel file tsconfig.json , non saranno usate di default 
