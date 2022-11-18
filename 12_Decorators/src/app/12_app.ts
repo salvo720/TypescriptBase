@@ -21,7 +21,7 @@ function Logger(constructor : Function){
 @Logger
 class Prova {
   constructor(){
-    console.log('sto creando un oggetto di prova ')
+    console.log('sto creando un oggetto di Prova ')
   }
 }
 
@@ -34,8 +34,50 @@ class Prova {
 
 //  123) - creare una decorator factory (passare parametri )
 
+function Logger2(messaggio:string){
+return function( constructor : Function ){
+  console.log(messaggio)
+  console.log(constructor )
+}
+}
 
 
+@Logger2('ciao sono il Logger2 della classe Prova2')
+class Prova2{
+  constructor(){
+    console.log('sto creando un oggetto di Prova2 ')
+  }
+}
+
+@Logger2('ciao sono il Logger2 della classe Querty')
+class Querty{
+  constructor(){
+    console.log('sto creando un oggetto di Querty ')
+  }
+}
+
+
+//  124) - esempio con template 
+
+function creaElemento (elemento : string, id : string, nome : string ){
+  return function( constructor : any ){
+    const container = document.getElementById(id) ;
+
+    // new construct e come new Test() crea un nuovo oggetto 
+    const test = new constructor(id, nome);
+    if(container){
+      container.innerHTML = elemento ;
+      container.querySelector('h1')!.textContent = test.nome 
+    }
+
+  }
+}
+// contenuto = id
+
+@creaElemento('<h1></h1>','contenuto',"Luca")
+class Test {
+  constructor(private id:string , private nome:string){}
+}
 
 
 
